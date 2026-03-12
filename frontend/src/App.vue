@@ -7,16 +7,14 @@
     <!-- 页面主体 -->
     <el-container style="height: calc(100vh - 60px);">
       <el-main>
-        <!-- 学生管理核心组件 -->
-        <StudentManager />
+        <!-- 路由出口：根据地址渲染对应页面 -->
+        <router-view />
       </el-main>
     </el-container>
   </div>
 </template>
 
 <script setup>
-// 引入学生管理组件（后续创建）
-import StudentManager from './components/StudentManager.vue'
 </script>
 
 <style scoped>
